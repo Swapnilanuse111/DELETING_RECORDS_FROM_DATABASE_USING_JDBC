@@ -15,11 +15,9 @@ public class deleterecord {
 			Statement stmt=con.createStatement();
 			 stmt.executeUpdate("delete from employee WHERE id=1");
 			 System.out.println("One Record deleted Sucessfully");
+			}catch(Exception e)
+			{
+				System.out.println(e);
+			}
 	}
-		catch(Exception e)
-		{
-			System.out.println(e);
-		}
-		}
-
 }
